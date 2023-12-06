@@ -1,0 +1,37 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@600&display=swap');
+
+.swiper{
+  overflow: inherit !important;
+
+  .swiper-button-next, .swiper-button-prev {
+    width: var(--swiper-navigation-size);
+    background-color: black;
+    border: 2px solid;
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+    color:white;
+
+    &:hover {
+      background-color: green;
+    }
+
+    &::after{
+      transform: scale(.5);
+    }
+  }
+
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -40px !important;
+  }
+
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -40px !important;
+  }
+
+}

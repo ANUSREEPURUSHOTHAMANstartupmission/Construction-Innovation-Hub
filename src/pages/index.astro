@@ -1,0 +1,660 @@
+---
+// import Countdown from "../components/Countdown.svelte";
+import TimelineItem from "../components/TimelineItem.svelte";
+import Layout from "../layouts/Layout.astro";
+import Nav from '../components/Navbar.svelte';
+
+
+
+--- 
+
+<Layout>
+  <Nav client:load></Nav>
+  <main class=" relative min-h-[20vh] flex flex-col items-center justify-center overflow-x-clip" id="home" >
+	<div class=" bg-cover py-24 bg-no-repeat min-w-full min-h-[20vh] h-[20vh]  my-auto flex" style="background-image:url('/img/bgg.png')">
+		
+	</div>
+  </main>
+
+  
+  <section class="py-20 md:px-14 px-4"  >
+    <div class=" grid lg:grid-cols-2 grid-cols-1 gap-8" >
+		<div class=" container w-full md:p-10 p-6">
+			<img src="img/bbg.svg" class=" ">
+		   
+		</div>
+      <div class="container mx-auto my-auto" >
+			<div class=" mx-auto text-center">
+				<h1 class=" text-[#fd226a]" style="font-weight: 550;font-family: Rubik,sans-serif;font-size: 1.5rem;">Construction Innovation Hub</h1>
+				<h1 class=" pt-3 text-black" style="font-family: Rubik,sans-serif;font-size: 1.5rem;">A Joint Initiative of</h1>
+			</div>
+			<div class=" justify-center pt-6 flex my-auto pb-8 ">
+				<img src="/img/logo.svg" class=" md:w-32 w-28 flex my-auto">
+				<img src="/img/Habitat.svg" class=" md:w-40 w-36 flex my-auto">
+			</div>
+        <div class="text-justify mb-3 text-[#616161] text-lg" style="font-family: Rubik,sans-serif;">
+			The Construction Innovation Hub (CIH) aims to promote Innovation and Sustainability in Construction in India by fostering collaboration, innovation, and knowledge sharing among stakeholders in the construction industry. CIH will be focused on exploring solutions
+			that address some of the biggest challenges facing the construction industry today which includes labour shortages, building materials, environmental impact, project delays, adoption of technology and inefficiencies in the construction process. CIH will provide a platform for relevant stakeholders in the construction value chain comprising of tech / product startups, architects, engineers, designers, contractors, masons, carpenters, designers, policymakers, academics, and civil society organizations to come together and share their experiences, best practices, and solutions for sustainable construction. </div>
+      </div>
+     
+    </div>
+	<div   class="text-justify mb-3 text-[#616161] text-lg" style="font-family: Rubik,sans-serif;">CIH is committed to sustainability and aims to reduce
+		the environmental impact of construction projects using sustainable materials, eco-friendly building techniques, and smart buildings. The Hub will also promote the development of markets for affordable construction solutions. This will involve working with developers, contractors, and government agencies to identify opportunities for affordable housing and infrastructure projects.
+	</div>
+  </section>
+
+
+
+
+  <section class=" pb-24 md:px-10 px-6 mx-auto" style="font-family: Rubik,sans-serif;">
+	<div class=" md:w-2/3 mx-auto items-center">
+		<div class=" grid md:grid-cols-4 grid-cols-2 gap-4 mx-auto items-center justify-center">
+			<div class=" group hover:bg-[#41516C] hover:text-white cursor-pointer border border-dotted text-center py-12 px-2">
+				<h1 class=" text-5xl text-[#00afef] group-hover:text-white " style="font-weight: 500;">50</h1>
+				<h1 class=" text-base pt-2">Startups</h1>
+			</div>
+			<div class=" group hover:bg-[#41516C] hover:text-white cursor-pointer border border-dotted text-center py-12 px-2">
+				<h1 class=" text-5xl text-[#00afef] group-hover:text-white" style="font-weight: 500;">500</h1>
+				<h1 class=" text-base pt-2">Student Entrepreneurs</h1>
+			</div>
+			<div class="group hover:bg-[#41516C] hover:text-white cursor-pointer border border-dotted text-center py-12 px-2">
+				<h1 class=" text-5xl text-[#00afef] group-hover:text-white" style="font-weight: 500;">1000</h1>
+				<h1 class=" text-base pt-2">MSME Market Players</h1>
+			</div>
+			<div class="group hover:bg-[#41516C] hover:text-white cursor-pointer border border-dotted text-center py-12 px-2">
+				<h1 class=" text-5xl text-[#00afef] group-hover:text-white" style="font-weight: 500;">10</h1>
+				<h1 class=" text-base pt-2">Hackathons</h1>
+			</div>
+		</div>
+	</div>
+  </section>
+
+
+
+  <section class=" py-16   text-white bg-blue-900  "  style="font-family: Rubik,sans-serif;">
+	<div class=" mx-auto flex flex-col  ">
+		
+			<div class="text-xl container flex px-8 font-bold mb-5 ">Key Activities</div>
+
+			
+		<div class=" flex lg:flex-row flex-col py-5 ">
+				
+			<div class="  w-full font-data">
+
+				<div class=" grid lg:grid-cols-2 grid-cols-1 gap-4  px-12">
+					
+					<div class=" space-y-4 items-start">
+						<h1 class=" md:text-xl text-lg text-white  items-center  flex"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						  </svg>
+						  Support Startups</h1>
+						<p class=" text-sm" >Identification, selection, and support startups across India with solutions in the construction / housing and with a special focus on affordable housing.
+						</p>
+					</div>
+
+					<div class=" space-y-4 items-start">
+						<h1 class="md:text-xl text-lg text-white  items-center  flex"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						  </svg>
+							Nurturing Early-Stage Entrepreneurs</h1>
+						<p class=" text-sm" >
+							Coordinating with Universities and colleges in Kerala to identify early-stage innovators in shelter tech and to extend CIH support to them through knowledge sharing, expert mentoring, domain specific workshops and bootcamps.
+						</p>
+					</div>
+
+					<div class=" space-y-4 items-start">
+						<h1 class="md:text-xl text-lg text-white  items-center  flex"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						  </svg>
+							MSME support in the construction value chain</h1>
+						<p class=" text-sm" >
+							The Hub will organize training programs, workshops, and seminars to build the capacity of MSME’s in construction practices, including sustainable construction practices.
+
+						</p>
+					</div>
+
+					<div class=" space-y-4 items-start">
+						<h1 class="md:text-xl text-lg text-white  items-center  flex"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						  </svg>
+							Industry Outreach</h1>
+						<p class=" text-sm" >
+							The Hub will facilitate networking and collaboration among stakeholders in the construction industry, investor and corporate connect events, business incubation, and mentorship programs.
+
+						</p>
+					</div>
+
+					<div class=" space-y-4 items-start">
+						<h1 class="md:text-xl text-lg text-white  items-center  flex"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						  </svg>
+							Innovation and research</h1>
+						<p class=" text-sm" >
+							The Hub will support research and development of innovative technologies and materials for sustainable construction, including low-carbon building materials, smart buildings, and renewable energy systems.
+						</p>
+					</div>
+
+					<div class=" space-y-4 items-start">
+						<h1 class="md:text-xl text-lg text-white  items-center  flex"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						  </svg>
+							Policy advocacy</h1>
+						<p class=" text-sm" >
+							The Hub will work with policymakers to advocate for sustainable construction policies and regulations that promote resource efficiency, environmental protection, and social responsibility.
+
+						</p>
+					</div>
+		
+					<div class=" space-y-4 items-start">
+						<h1 class="md:text-xl text-lg text-white  items-center  flex"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						  </svg>
+							Access to funding</h1>
+						<p class=" text-sm" >
+							Paid PoC pilots to early-stage startups and access to funding at various stages through the The Terwilliger Centre and KSUM network.
+
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+</section>
+
+
+
+  
+  <!-- <section class="py-24 px-5 relative " >
+    <div class="container mx-auto">
+      <div class="mb-8 text-center  text-xl font-black  ">
+        Benefits
+      </div>
+     <div>
+		<div class=" grid md:grid-cols-3 grid-cols-1 gap-5">
+				<div class="rounded-xl" >
+					<div class=" rounded-xl h-44 bg-cover flex my-auto bg-no-repeat" style="background-image:url('/img/bn1.svg')">
+						<div class=" md:text-2xl text-xl font-bold text-center my-auto mx-auto items-center justify-center flex text-white">Mentoring</div>
+					</div>
+				</div>
+
+				<div  class=" rounded-xl">
+					<div class=" rounded-xl h-44 bg-cover flex my-auto bg-no-repeat" style="background-image:url('/img/bn2.svg')">
+						<div class=" md:text-2xl text-xl font-bold text-center my-auto mx-auto items-center justify-center flex text-white">
+
+						Grants worth USD 150K
+					</div>
+
+					</div>
+				</div>
+
+				<div class="rounded-xl" >
+					<div class="rounded-xl h-44  bg-cover flex my-auto bg-no-repeat" style="background-image:url('/img/bn3.svg')">
+						<div class=" md:text-2xl text-xl font-bold text-center my-auto mx-auto items-center justify-center flex text-white">
+
+							Support through KSUM schemes
+
+						</div>
+
+					</div>
+				</div>
+		</div>
+	 </div>
+    </div>
+  </section> -->
+  
+
+
+
+
+
+
+<section class=" py-20">
+	
+	<div class=" flex lg:flex-row flex-col gap-2">
+		<section class=" mx-auto w-full pt-10 lg:w-2/3">
+			<div class="mb-12 text-center  text-xl font-black  ">
+				Timeline
+			</div>
+			<ul>
+				<li style="--accent-color:#41516C">
+					<div class="date">15th December 2023</div>
+					<div class="title text-base">Application Start Date</div>
+				</li>
+				<li style="--accent-color:#41516C">
+					<div class="date">15th January 2024</div>
+					<div class="title text-base">Application Deadline</div>
+				</li>
+				<li style="--accent-color:#41516C">
+					<div class="date">20th January 2024</div>
+					<div class="title text-base">Screening phase 1</div>
+				</li>
+				<li style="--accent-color:#41516C">
+					<div class="date">31st January 2024</div>
+					<div class="title text-base">Screening phase 2</div>
+				</li>
+				<li style="--accent-color:#41516C">
+					<div class="date">5th February 2024</div>
+					<div class="title text-base">Program Launch</div>
+				</li>
+			</ul>
+		</section>
+		<section class=" container mx-auto pt-10 lg:w-1/3 px-8">
+			<div class="mb-12 text-center  text-xl font-black  ">
+				Benefits
+			</div>
+			<div class=" container mx-auto  gap-4 h-60 grid  grid-cols-2  w-full ">
+				<div class=" bg-[#1f2836] text-white border mx-auto  w-full mb-10 border-b text-center justify-center items-center  my-auto flex flex-col h-full">
+					<img src="/img/b1.svg" class=" w-20">
+					<h1 class=" text-lg pt-5">Mentoring
+					</h1>
+				</div>
+		
+				<div class=" bg-[#1f2836] text-white border mx-auto   w-full mb-10 border-b text-center justify-center items-center my-auto flex flex-col h-full">
+					<img src="/img/b2.svg" class=" w-16">
+					<h1 class=" text-lg pt-5">Grants worth USD 150K</h1>
+				</div>
+		
+				<div class="  bg-[#1f2836] text-white border  mx-auto w-full  mb-10 border-b text-center justify-center items-center my-auto flex flex-col h-full">
+					<img src="/img/b3.svg" class=" w-20 ">
+					<h1 class=" text-lg pt-3">Support through KSUM schemes</h1>
+				</div>
+		
+			</div>
+		</section>
+	</div>
+</section>
+
+<section class=" container mx-auto md:pb-24 md:py-0 py-24">
+	<div class="mb-8 text-center  text-xl font-black  ">
+		Focus Sectors
+	</div>
+	<div class=" container mx-auto  h-60 grid md:grid-cols-3 grid-cols-2  ">
+		<div class=" border-r mb-10 border-b text-center justify-center items-center my-auto flex flex-col h-full">
+			<img src="/img/construction.svg" class=" w-12">
+			<h1 class=" text-lg pt-5">Construction</h1>
+		</div>
+
+		<div class=" border-r mb-10 border-b text-center justify-center items-center my-auto flex flex-col h-full">
+			<img src="/img/building.svg" class=" w-12">
+			<h1 class=" text-lg pt-5">Housing</h1>
+		</div>
+
+		<div class=" border-r mb-10 border-b text-center justify-center items-center my-auto flex flex-col h-full">
+			<img src="/img/property-price.svg" class=" w-12">
+			<h1 class=" text-lg pt-5">Real Estate</h1>
+		</div>
+
+		<div class=" border-r lg:border-b-0 border-b pt-10  text-center justify-center items-center my-auto flex flex-col h-full">
+			<img src="/img/green-city.svg" class=" w-12">
+			<h1 class=" text-lg pt-5">Green Building Materials</h1>
+		</div>
+
+		<div class=" border-r pt-10 text-center justify-center items-center my-auto flex flex-col h-full">
+			<img src="/img/climate-monitor.svg" class=" w-16">
+			<h1 class=" text-lg pt-5">Climate Tech</h1>
+		</div>
+
+		<div class=" border-r pt-10 text-center justify-center items-center my-auto flex flex-col h-full">
+			<img src="/img/garbage.svg" class=" w-12">
+			<h1 class=" text-lg pt-5">Waste to Value</h1>
+		</div>
+	</div>
+</section>
+
+<section class=" mx-auto text-center justify-center md:py-24 pt-56  pb-24">
+	<div class=" px-6" >
+		<a href="https://forms.zohopublic.com/keralastartupmission/form/ConstructionInnovationHub/formperma/8Fk9GeVnaCuv78xHePjjzhVD_59yFvxIylusBUFjjyE" target="_blank" class=" rounded-xl bg-blue-900 text-white px-4 py-2 md:text-lg text-sm  hover:bg-[#151853] cursor-pointer" style="font-family: Rubik,sans-serif;">Apply for Construction Innovation Hub</a>
+	</div>
+</section>
+  
+ 
+  
+
+
+
+
+
+
+
+  <section class=" pb-24 mx-auto items-center justify-center text-center flex flex-col">
+	<div class="mb-8 px-8  text-xl font-black  ">
+		Partners
+    </div>
+	<div class=" flex sm:flex-row flex-col gap-3">
+		<div class="w-1/3 md:w-44 mx-auto">
+			<div class="p-3 rounded-md bg-white border shadow-lg  ">
+			  <div class="overflow-hidden ">
+				<img src="/img/p1.png" alt="Partner logo">
+			  </div>
+			</div>
+		</div>
+		<div class="w-1/3 md:w-44 mx-auto">
+			<div class="p-3 rounded-md bg-white border shadow-lg   ">
+			  <div class="overflow-hidden ">
+				<img src="/img/p2.png" alt="Partner logo">
+			  </div>
+			</div>
+		</div><div class="w-1/3 md:w-44 mx-auto">
+			<div class="p-3 rounded-md bg-white border shadow-lg  ">
+			  <div class="overflow-hidden ">
+				<img src="/img/p3.png" alt="Partner logo">
+			  </div>
+			</div>
+		</div>
+	</div>
+  </section>
+
+  <footer class=" bg-[#151853]">
+	<div id="ksum-copy">
+		<div class="container text-white text-sm" style="font-family: Rubik,sans-serif;">
+			<div class="py-6 px-8 mx-auto text-center items-center  flex justify-between">
+				<div class=" text-center flex">Copyright © 2021 All Rights Reserved.</div>
+				<div class="text-right">
+					<a href="https://business.startupmission.in/disclaimer" target="_blank">Disclaimer</a>
+					<span class="mx-2">|</span>
+					<a href="https://business.startupmission.in/privacy" target="_blank">Privacy Policy</a>
+					<span class="mx-2">|</span><a href="https://business.startupmission.in/termsofuse" target="_blank">Terms of Use</a>
+					<span class="mx-2">|</span>
+					<span>Powered by </span><a href="https://startupmission.kerala.gov.in" target="_blank">Kerala Startup Mission ®</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--   
+  <section id="contact" class="">
+	<div class="bg-blue-900 py-10 ">
+		<div class="container mx-auto">
+			<div
+				class="flex flex-col md:flex-row items-center justify-center"
+			>
+				<div
+					class="md:w-1/2 w-full items-center justify-center text-center mx-auto"
+				>
+					<img
+						src="/img/logo-white.svg"
+						class="h-28 mb-3 mx-auto text-center"
+						alt="Logo"
+					/>
+
+					<div class="mb-10 text-center text-white ">
+						<div class="font-bold text-sm ">
+							G3B, Thejaswini, Technopark Campus,
+							Kariyavattom,
+						</div>
+						<div class="mb-3">Trivandrum, Kerala 695581</div>
+					</div>
+				</div>
+				<div class="md:w-1/2 w-full text-white ">
+					<div
+						class="p-10 text-center flex flex-col items-center justify-center"
+					>
+						<div class="">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+  
+ 
+</Layout>
+
+
+<style is:global>
+	ul {
+  --col-gap: 1rem;
+  --row-gap: 4rem;
+  --line-w: 0.25rem;
+  display: grid;
+  grid-template-columns: var(--line-w) 1fr;
+  grid-auto-columns: max-content;
+  column-gap: var(--col-gap);
+  list-style: none;
+  width: min(50rem, 70%);
+  margin-inline: auto;
+}
+
+/* line */
+ul::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(var(--line-w) / 2);
+}
+
+/* columns*/
+
+/* row gaps */
+ul li:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+
+/* card */
+ul li {
+  grid-column: 2;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+/* date */
+ul li .date {
+  --dateH: 3rem;
+  height: var(--dateH);
+  margin-inline: calc(var(--inlineP) * -1);
+
+  text-align: center;
+  background-color: var(--accent-color);
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+}
+
+/* date flap */
+ul li .date::before {
+  content: "";
+  width: var(--inlineP);
+  aspect-ratio: 1;
+  background: var(--accent-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+}
+
+/* circle */
+ul li .date::after {
+  content: "";
+  position: absolute;
+  width: .5rem;
+  aspect-ratio: 1;
+  background: var(--bgColor);
+  border: 0.3rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
+
+/* title descr */
+ul li .title,
+ul li .descr {
+  background: var(--bgColor);
+  position: relative;
+  padding-inline: 1.5rem;
+}
+ul li .title {
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-weight: 500;
+}
+ul li .descr {
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+/* shadows */
+ul li .title::before,
+ul li .descr::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(4px);
+  transform: translate(-50%, 50%);
+}
+ul li .title::before {
+  bottom: calc(100% + 0.125rem);
+}
+
+ul li .descr::before {
+  z-index: -1;
+  bottom: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  ul {
+    grid-template-columns: 1fr var(--line-w) 1fr;
+  }
+  ul::before {
+    grid-column: 2;
+  }
+  ul li:nth-child(odd) {
+    grid-column: 1;
+  }
+  ul li:nth-child(even) {
+    grid-column: 3;
+  }
+
+  /* start second card */
+  ul li:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  ul li:nth-child(odd) .date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  ul li:nth-child(odd) .date::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  ul li:nth-child(odd) .date {
+    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+  }
+}
+
+.credits {
+  margin-top: 1rem;
+  text-align: right;
+}
+.credits a {
+  color: var(--color);
+}
+
+</style>
+
+
+
+
+<style is:global>
+	/* CSS for gallery and thumbnail images */
+  .gallery {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  
+  /* CSS for the popup overlay */
+  .video-popup-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 9999;
+  }
+  
+  .video-popup-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+  .close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  </style>
+  <!-- youtube video -->
+
+  <style is:global>
+    /* CSS for gallery and thumbnail images */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  /* CSS for the popup overlay */
+  .video-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+  }
+  
+  .video-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  </style>
+ 

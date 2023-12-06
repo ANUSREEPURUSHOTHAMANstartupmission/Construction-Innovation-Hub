@@ -1,0 +1,39 @@
+[
+  {
+      "title": "Panel Discussions",
+      "image": "panel discussuon 1 (2).png",
+      "content":"Insightful panel discussions featuring experts, stakeholders, and thought leaders driving impactful conversations on key sustainability topics."
+  },
+  {
+      "title": "Fireside Chats",
+      "image": "talk.jpg",
+      "content":"Intimate and candid conversations with influential sustainability leaders, providing unique insights and thought-provoking discussions on pressing global challenges." 
+     },
+  {
+    "title": "Master Classes",
+    "image": "masterclass 1.png",
+    "content":"Interactive master classes led by industry experts, providing in-depth knowledge and practical skills to drive sustainability initiatives and foster positive change."
+  },
+  {
+    "title": "Workshops",
+    "image": "workshop 1.jpg",
+    "content":"Engaging workshops offering hands-on learning experiences, collaborative problem-solving, and actionable strategies for advancing sustainability goals and practices."
+  },
+  {
+    "title": "SDG Expo",
+    "image": "product showcase 1.png",
+    "content":"Showcasing projects and initiatives that align with the United Nations Sustainable Development Goals, highlighting progress towards a more sustainable and equitable future."
+  },
+  {
+    "title": "Investor Connect",
+    "image": "investor 1.png",
+    "content":"Facilitating connections between sustainability-focused entrepreneurs and investors to drive funding and support for impactful ventures and initiatives."
+  },
+ 
+  {
+    "title": "Sustainability Awards",
+    "image": "p9.jpg",
+    "content":"Recognizing outstanding individuals, organizations, and initiatives for their remarkable contributions and achievements in advancing sustainability practices."
+  }
+
+]
