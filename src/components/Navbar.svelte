@@ -38,17 +38,17 @@
 
 
 
-<div id="navbar" class="w-64 min-h-screen sm:w-full sm:min-h-0 sm:h-20 p-8 sm:py-3 bg-[#040e26]  mt-4 left-0 top-0 
+<div id="navbar" class="w-64 md:mt-4 mt-0 min-h-screen sm:w-full sm:min-h-0 sm:h-20 p-8 sm:py-3 bg-[#040e26]  left-0 top-0 
     sm:flex sm:items-center
      ease-in-out transition-all transform duration-300
-    -translate-x-full sm:translate-x-0  absolute z-50 
+    -translate-x-full sm:translate-x-0 sm:absolute fixed z-50 
      {menu_open?'translate-x-0':''} {scrolled?'md:bg-transparent':'md:bg-transparent'}
     ">
   
 
 
     <div class="flex bg-white top-4 absolute sm:hidden">    
-      <button on:click="{()=> menu_open = !menu_open }" class="z-50 bg-[#003845] cursor-pointer fixed right-5 w-10 h-10 text-xl ml-auto transition duration-150 hover:shadow leading-none px-2 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
+      <button on:click="{()=> menu_open = !menu_open }" class="z-50 bg-[#040e26] cursor-pointer fixed right-5 w-10 h-10 text-xl ml-auto transition duration-150 hover:shadow leading-none px-2 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
         <span class="block absolute w-6 h-0.5 rounded-sm bg-white top-3 duration-500 { menu_open ? 'opacity-0':'' }" ></span>
         <span class="block absolute w-6 h-0.5 rounded-sm bg-white duration-500 { menu_open ? 'transform rotate-45':'' }"></span>
         <span class="block absolute w-6 h-0.5 rounded-sm bg-white duration-500 { menu_open ? 'transform -rotate-45':'' }"></span>
@@ -62,13 +62,13 @@
     <div class="w-screen container mx-auto sm:flex sm:items-center sm:justify-between">
       <div class=" md:mx-10 m-0  font-medium w-fit p-0 rounded-md flex items-center justify-center">
        
-        <img src="/Construction-Innovation-Hub/img/logo-white.svg" alt="logo" class=" {scrolled?'h-12':'h-16'}">
+        <img src="/img/logo-white.svg" alt="logo" class=" {scrolled?'h-12':'h-16'}">
       </div>
 
       <nav>
-        <ul class="sm:flex md:text-xs gap-2 w-full">
+        <ul class="sm:flex md:text-xs gap-2 w-full ">
          
-          <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-5 py-2 transform  hover:underline hover:decoration-[#fd226a] hover:decoration-2 transition duration-500 hover:scale-100" >
+          <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-5 py-2 transform   transition duration-500 hover:scale-100" >
             <a href="/" class="md:text-white text-white  text-base  font-data ">Home</a>
           </li>
           
@@ -84,7 +84,7 @@
 
 <main class="w-full fixed bg-black z-40" >
   <div class="flex sm:hidden" >        
-    <img src="/Construction-Innovation-Hub/img/logo-white.svg" alt="Logo" class="object-contain h-12 px-2">
+    <img src="/img/logo-white.svg" alt="Logo" class="object-contain h-12 px-2">
     <button on:click="{()=> menu_open = !menu_open }" class="z-50 cursor-pointer fixed right-5 w-10 h-10 text-xl ml-auto transition duration-150 hover:shadow leading-none px-2 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
       <span class="block absolute w-6 h-0.5 rounded-sm bg-white top-3 duration-500 { menu_open ? 'opacity-0':'' }" ></span>
       <span class="block absolute w-6 h-0.5 rounded-sm bg-white duration-500 { menu_open ? 'transform rotate-45':'' }"></span>

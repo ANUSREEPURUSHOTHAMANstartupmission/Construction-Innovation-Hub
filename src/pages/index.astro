@@ -9,7 +9,7 @@ import Nav from '../components/Navbar.svelte';
 --- 
 
 <Layout>
-  <Nav client:load></Nav>
+ 
   <main class=" relative min-h-[20vh] flex flex-col items-center justify-center overflow-x-clip" id="home" >
 	<div class=" bg-cover py-24 bg-no-repeat min-w-full min-h-[20vh] h-[20vh]  my-auto flex" style="background-image:url('/Construction-Innovation-Hub/img/bgg.png')">
 		
@@ -214,6 +214,7 @@ import Nav from '../components/Navbar.svelte';
 <section class=" py-20">
 	
 	<div class=" flex lg:flex-row flex-col gap-2">
+		
 		<section class=" mx-auto w-full pt-10 lg:w-2/3">
 			<div class="mb-12 text-center  text-xl font-black  ">
 				Timeline
@@ -406,7 +407,7 @@ import Nav from '../components/Navbar.svelte';
 </Layout>
 
 
-<style is:global>
+<style>
 	ul {
   --col-gap: 1rem;
   --row-gap: 4rem;
